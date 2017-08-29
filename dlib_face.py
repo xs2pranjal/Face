@@ -4,6 +4,7 @@ import dlib
 vid = cv2.VideoCapture(0)
 
 detect = dlib.get_frontal_face_detector()
+# obtain Shape_predictor file from "https://drive.google.com/open?id=0B-1JL6BK7UimeWdxY281QTY1ejg"
 predict = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 while (True):
